@@ -12,7 +12,7 @@ namespace AtikJr.Controllers
 
         public string Test()
         {
-            return "test page";
+            return "test sayfası";
         }
 
     }
