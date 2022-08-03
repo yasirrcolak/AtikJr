@@ -7,6 +7,7 @@ namespace AtikJr.Models
         public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
 
         // fdsfsdfdsfd
+        //ajbhjabfeafjh 
         // bi þeyler 
     }
 }
