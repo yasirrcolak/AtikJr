@@ -5,6 +5,8 @@ namespace AtikJr.Models
         public string? RequestId { get; set; }
 
         public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
+
+        // fdsfsdfdsfd
         // bi þeyler 
     }
 }
