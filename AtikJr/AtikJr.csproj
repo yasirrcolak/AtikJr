@@ -6,4 +6,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\atikerkeko.png" />
+    <None Include="wwwroot\image\atikerkeko.png" />
+  </ItemGroup>
+
 </Project>
