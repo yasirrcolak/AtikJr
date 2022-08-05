@@ -2,7 +2,7 @@
 
 namespace AtikJr.Controllers
 {
-    public class atik : Controller
+    public class MuhasebeController : Controller
     {
         public IActionResult Index()
         {
