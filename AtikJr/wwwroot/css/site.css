@@ -16,3 +16,50 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+
+body {
+    margin-top: 9px;
+}
+
+#menu li {
+    list-style-type: none;
+}
+
+#menu a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 600;
+    display: block;
+    text-align: center;
+    transition: 1s;
+    font-family: calibri,arial,verdana;
+    font-size: 20px;
+    line-height: 50px;
+    background-color: #005555;
+    width: 180px;
+    margin-right: 1px;
+    float: left;
+    padding: 20px;
+    position: relative;
+    top: -180px;
+    right: -150px;
+}
+
+#menu span {
+    display: block;
+    margin-top: -60px;
+}
+
+#menu a:hover {
+    background-color: #5FD367;
+    color: #005555;
+}
+
+.right {
+    float: right;
+    width: 300px;
+    background-color: #b0e0e6;
+}
+
+
