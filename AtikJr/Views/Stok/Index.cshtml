@@ -2,7 +2,98 @@
     ViewData["Title"] = "Home Page";
 }
 
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 <div class="text-center">
-    <h1 class="display-4">Stok</h1>       
-    <!-- <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p> -->
+    <h1 class="display-4">Stok</h1>
+
+    @*  <label>Stok No</label> <input type="text" align= />*@
 </div>
+<form>
+
+    <table class="metin" border="0">
+        <tr>
+            <td>Stok No :</td>
+            <td><input type="text" class="bosluk" name="no" id="no" required placeholder="Lütfen Stok No Giriniz"></td>
+        </tr>
+
+        <tr>
+            <td>Stok Adı :</td>
+
+            <td><input type="text" class="bosluk" name="ad" id="ad" required placeholder="Lütfen Stok Adını Giriniz"></td>
+        </tr>
+
+    </table>
+    <br />    <br />    <br />    <br />
+
+    <button class="btn btn-primary theme-btn btn-style-one buton" type="submit" ><span>Kaydet</span></button>
+   @* <a href="#">SİL<span class="bi bi-trash" title="Sil"></span></a>
+    <a href="#" title="Güncelle">GÜNCELLE<span class=""></span></a>*@
+
+
+</form>
+<style>
+     .bosluk {
+        margin: 25px;
+    }
+     .buton {
+        margin-left: -140px;
+    }
+    .metin {
+        margin-left: -250px;
+    }
+
+</style>
+@*<form class="form-inline">
+ <div class="container">
+    <form>
+        <div class="row">
+            <div class="col-6"><!--left side -->
+                <div class="form-group row">
+                    <label for="fname" class="col-sm-6 col-form-label">Stok No:</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="fname">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="lname" class="col-sm-6 col-form-label">Stok Adı:</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="lname">
+                    </div>
+                </div>
+                    <div class="form-group row">
+                    <label for="lname" class="col-sm-6 col-form-label">Last Name:</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="lname">
+                    </div>
+                </div>
+
+
+
+
+
+
+            </div>
+
+            <!--right side -->
+        </div><!-- form for teacher/student-->
+    </form>
+</div>
+
+
+</form>*@
+@*Test <input type="text"><<br />
+Örnekk <input type="text"><<br />
+Test <input type="text"><<br />*@
+
+@*      <input type="text"name="input">*@
+
+<style>
+    /*
+            input {
+                margin-right:100px;
+             margin: 10px auto;
+             margin-left:-500px;
+            }*/
+
+</style>
