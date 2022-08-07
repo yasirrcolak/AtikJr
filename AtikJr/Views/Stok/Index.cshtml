@@ -1,4 +1,5 @@
-﻿@{
+﻿
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -41,10 +42,11 @@
 
     </table>
 
-    @*Tablo oluşturma*@
+    @*Tablo oluşturma
     <table class="tablo">
+
         <tr>
-            <td class="tablo" style="width: 150px;"height="79">Hayri</td>
+            <td class="tablo" style="width: 150px;"height="79">başlık</td>
             <td class="tablo" style="width: 150px;"height="79">KOÇMARLAR</td>
             <td class="tablo" style="width: 150px;"height="79">KOÇMARLAR</td>
             <td class="tablo" style="width: 150px;"height="79">KOÇMARLAR</td>
@@ -79,7 +81,7 @@
             <td class="tablo"height="83">Cansever</td>
         </tr>
     </table>  
-
+    *@
     
     @*Kaydet Butonunu alta kaydırmak için*@
     <br />    <br />    <br />    <br /> 
@@ -104,29 +106,133 @@
         margin-top: 120px;
     }
 
-    /*Tablo ayarı*/
+    /*Tablo ayarı
         .tablo{
             border:1px solid #282830;
             margin-left: 600px;
             margin-top: -413px;
-        }
+        }*/
+
 
     /*Butonun konumu*/
      .buton {
     display: block;
     margin-left:260px;
-    margin-top: 250px;
+    margin-top: -50px;
 }
 
 
 </style>
 
+@*aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*@
+
+
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-    /*
-            input {
-                margin-right:100px;
-             margin: 10px auto;
-             margin-left:-500px;
-            }*/
+  .tablo1 {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 75%;
+  border: 1px solid #ddd;
+  margin-left:580px;
+  margin-top: -565px;
+  
+  
+}
+    .scroll{
+   overflow:scroll;
+  
+ }
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+
+
+
+
 
 </style>
+</head>
+@*
+<h2>Responsive Table</h2>
+<p>If you have a table that is too wide, you can add a container element with overflow-x:auto around the table, and it will display a horizontal scroll bar when needed.</p>
+<p>Resize the browser window to see the effect. Try to remove the div element and see what happens to the table.</p>
+<div style="overflow-x:auto;">
+*@
+  <table class="tablo1" >
+    <tr>
+      <th>Stok Adı</th>
+      <th>Kart Açıklaması</th>
+      <th>Stok Açıklama 1</th>
+      <th>Stok Açıklama 2</th>
+      <th>Stok Açıklama 3</th>
+      <th>Sil Butonu hizzası</th>
+
+    </tr>
+    <tr>
+      <td>Tekerlek</td>
+      <td>Araba için</td>
+      <td>arabanın tekerleği</td>
+      <td>50</td>
+      <td>50</td>
+      <td><a href="#">SİL<span class="bi bi-trash" title="Sil"></a>  &nbsp  &nbsp
+      <a href="#">EDIT<span class="bi bi-trash" title="EDIT"></a>    
+      </td>
+
+    </tr>
+    <tr>
+      <td>Vida</td>
+      <td>Tekerlek için</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td><a href="#">SİL<span class="bi bi-trash" title="Sil"></a>  &nbsp  &nbsp
+      <a href="#">EDIT<span class="bi bi-trash" title="EDIT"></a>
+      </td>   
+    </tr>
+    <tr>
+      <td>Kapı</td>
+      <td>Araba Kapısı</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td><a href="#">SİL<span class="bi bi-trash" title="Sil"></a>  &nbsp  &nbsp
+      <a href="#">EDIT<span class="bi bi-trash" title="EDIT"></a>
+      </td> 
+    </tr>
+        <tr>
+      <td>Kapı</td>
+      <td>Araba Kapısı</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td><a href="#">SİL<span class="bi bi-trash" title="Sil"></a>  &nbsp  &nbsp
+      <a href="#">EDIT<span class="bi bi-trash" title="EDIT"></a>
+      </td> 
+    </tr>
+        <tr>
+      <td>Kapı</td>
+      <td>Araba Kapısı</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td><a href="#">SİL<span class="bi bi-trash" title="Sil"></a>  &nbsp  &nbsp
+      <a href="#">EDIT<span class="bi bi-trash" title="EDIT"></a>
+      </td> 
+    </tr>
+
+  </table tablo1>
+
+
+<style>
+
+
+</style>
+</html>
