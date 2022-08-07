@@ -146,7 +146,7 @@
   
  }
 
-th, td {
+ th, td{
   text-align: left;
   padding: 8px;
 }
@@ -229,6 +229,61 @@ tr:nth-child(even){background-color: #f2f2f2}
     </tr>
 
   </table tablo1>
+  @******************************************************************************************@
+
+  @*İşlem kaydı kısmı*@
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  .tablo2 {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 75%;
+  border: 1px solid #ddd;
+  margin-left:580px;
+  margin-top: 20px;
+  border: 1px solid black;
+ 
+}
+    .scroll{
+   overflow:scroll;
+  
+ }
+ 
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+</style>
+</head>
+@*
+<h2>Responsive Table</h2>
+<p>If you have a table that is too wide, you can add a container element with overflow-x:auto around the table, and it will display a horizontal scroll bar when needed.</p>
+<p>Resize the browser window to see the effect. Try to remove the div element and see what happens to the table.</p>
+<div style="overflow-x:auto;">
+*@
+  <table class="tablo2">
+    <tr>
+      <th>Yapılan İşlem</th>
+      <th>Açıklama</th>
+
+    </tr>
+    <tr>
+      <td>Kayıt</td>
+      <td>Tekerlek eklendi</td>
+    </tr>
+    <tr>
+      <td>Düzenleme</td>
+      <td>Kart açıklaması değiştirildi</td> 
+    </tr>
+    <tr>
+      <td>Silme</td>
+      <td>Tekerlek stoktan silindi</td>
+    </tr>
+
+  </table tablo2>
+
+
+
 
 
 <style>
