@@ -1,8 +1,7 @@
-﻿
+﻿<html>
 @{
     ViewData["Title"] = "Home Page";
 }
-
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 <div class="text-center">
     <h1 class="display-4">Stok</h1>
@@ -41,7 +40,7 @@
         </tr>
 
     </table>
-
+    
     @*Tablo oluşturma
     <table class="tablo">
 
@@ -125,48 +124,64 @@
 </style>
 
 @*aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*@
-
-
+@*sağ üst tablo*@
+<body>
 
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
   .tablo1 {
+
   border-collapse: collapse;
   border-spacing: 0;
   width: 75%;
   border: 1px solid #ddd;
   margin-left:580px;
   margin-top: -565px;
-  
-  
 }
-    .scroll{
-   overflow:scroll;
-  
- }
+
+
+
+.tablo1veri {
+    
+    width: 75%;
+    height: 20px;
+}
+.tablo1veri2 {
+    height: 200px;
+    display: block;
+    width: 72%;
+    overflow: auto;
+}
+
+
+
+
+
 
  th, td{
   text-align: left;
   padding: 8px;
 }
 
+
+
+
+
+
+
 tr:nth-child(even){background-color: #f2f2f2}
-
-
-
-
-
 
 </style>
 </head>
+
 @*
 <h2>Responsive Table</h2>
 <p>If you have a table that is too wide, you can add a container element with overflow-x:auto around the table, and it will display a horizontal scroll bar when needed.</p>
 <p>Resize the browser window to see the effect. Try to remove the div element and see what happens to the table.</p>
 <div style="overflow-x:auto;">
 *@
-  <table class="tablo1" >
+  <table class="tablo1 tablo1veri tablo1veri2">
     <tr>
       <th>Stok Adı</th>
       <th>Kart Açıklaması</th>
@@ -228,7 +243,9 @@ tr:nth-child(even){background-color: #f2f2f2}
       </td> 
     </tr>
 
+
   </table tablo1>
+  </body>
   @******************************************************************************************@
 
   @*İşlem kaydı kısmı*@
@@ -245,10 +262,19 @@ tr:nth-child(even){background-color: #f2f2f2}
   border: 1px solid black;
  
 }
-    .scroll{
-   overflow:scroll;
-  
- }
+
+
+ .tablo1veri11 {
+    
+    width: 75%;
+    height: 20px;
+}
+.tablo1veri22 {
+    height: 200px;
+    display: block;
+    width: 28%;
+    overflow: auto;
+}
  
 
 tr:nth-child(even){background-color: #f2f2f2}
@@ -261,15 +287,15 @@ tr:nth-child(even){background-color: #f2f2f2}
 <p>Resize the browser window to see the effect. Try to remove the div element and see what happens to the table.</p>
 <div style="overflow-x:auto;">
 *@
-  <table class="tablo2">
+  <table class="tablo2 tablo1veri11 tablo1veri22">
     <tr>
-      <th>Yapılan İşlem</th>
-      <th>Açıklama</th>
+      <th align="right">Yapılan İşlem</th>
+      <th>@*Açıklama*@</th>
 
     </tr>
     <tr>
-      <td>Kayıt</td>
-      <td>Tekerlek eklendi</td>
+      <td>Kayıt yapıldı</td>
+      <td></td>
     </tr>
     <tr>
       <td>Düzenleme</td>
