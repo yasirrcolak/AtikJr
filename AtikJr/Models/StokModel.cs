@@ -30,6 +30,6 @@
         /// <summary>
         /// stok sayısı
         /// </summary>
-        public float STOK_MİKTAR { get; set; }
+        public int STOK_MİKTAR { get; set; }
     }
 }
