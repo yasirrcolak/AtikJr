@@ -16,7 +16,7 @@ namespace AtikJr.Controllers
         /// <summary>
         /// Veritabanındaki tüm kayıtlı verileri içinde barındıran nesneleri tutan liste.
         /// </summary>
-        public List<KasaModel> kasaListesi = new List<KasaModel>();
+        public static List<KasaModel> kasaListesi = new List<KasaModel>();
 
         /// <summary>
         /// Veritabanından tüm araç kayıtlarını getirir.

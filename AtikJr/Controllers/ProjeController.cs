@@ -14,7 +14,7 @@ namespace AtikJr.Controllers
         /// <summary>
         /// Veritabanındaki tüm kayıtlı verileri içinde barındıran nesneleri tutan liste.
         /// </summary>
-        public List<ProjeModel> projeListesi = new List<ProjeModel>();
+        public static List<ProjeModel> projeListesi = new List<ProjeModel>();
 
         /// <summary>
         /// Veritabanından tüm proje kayıtlarını getirir.

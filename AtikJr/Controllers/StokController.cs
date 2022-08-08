@@ -13,7 +13,7 @@ namespace AtikJr.Controllers
         /// <summary>
         /// Veritabanındaki tüm kayıtlı verileri içinde barındıran nesneleri tutan liste.
         /// </summary>
-        public List<StokModel> stokListesi = new List<StokModel>();
+        public static List<StokModel> stokListesi = new List<StokModel>();
 
         /// <summary>
         /// Veritabanından tüm stok kayıtlarını getirir.

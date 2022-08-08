@@ -14,7 +14,7 @@ namespace AtikJr.Controllers
         /// <summary>
         /// Veritabanındaki tüm kayıtlı verileri içinde barındıran nesneleri tutan liste.
         /// </summary>
-        public List<MuhasebeModel> muhasebeListesi = new List<MuhasebeModel>();
+        public static List<MuhasebeModel> muhasebeListesi = new List<MuhasebeModel>();
 
         /// <summary>
         /// Veritabanından tüm muhasebe kayıtlarını getirir.

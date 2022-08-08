@@ -15,7 +15,7 @@ namespace AtikJr.Controllers
         /// <summary>
         /// Veritabanındaki tüm kayıtlı verileri içinde barındıran nesneleri tutan liste.
         /// </summary>
-        public List<CariModel> cariListesi = new List<CariModel>();
+        public static List<CariModel> cariListesi = new List<CariModel>();
 
         /// <summary>
         /// Veritabanından tüm cari kayıtlarını getirir.

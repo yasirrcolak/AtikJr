@@ -13,7 +13,7 @@ namespace AtikJr.Controllers
         /// <summary>
         /// Veritabanındaki tüm kayıtlı verileri içinde barındıran nesneleri tutan liste.
         /// </summary>
-        public List<BankaModel> bankaListesi = new List<BankaModel>();
+        public static List<BankaModel> bankaListesi = new List<BankaModel>();
 
         /// <summary>
         /// Veritabanından tüm banka kayıtlarını getirir.
