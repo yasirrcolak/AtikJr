@@ -12,38 +12,24 @@
         /// </summary>
         public string ODEME_TIPI { get; set;  }
 
-
         /// <summary>
         /// Müşteri ismi
         /// </summary>
-
         public string KULLANICI_ADI { get; set; }
-
 
         /// <summary>
         /// İşlem Tarihi
         /// </summary>
-
         public DateTime KASA_TARIH { get; set; }
-
 
         /// <summary>
         /// Şube Kodu
         /// </summary>
-
         public int SUBE_KODU { get; set; }
-
 
         /// <summary>
         /// Kasa Kodu
-        /// </summary>
-        
+        /// </summary>  
         public int KASA_KODU { get; set; }
-
-
-
-
-
-
     }
 }
