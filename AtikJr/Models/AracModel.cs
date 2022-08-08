@@ -13,6 +13,11 @@
         public string ARAC_MODEL {get; set; }
 
         /// <summary>
+        /// araç plakası
+        /// </summary>
+        public string ARAC_PLAKA { get; set; }
+
+        /// <summary>
         /// araç markası
         /// </summary>
         public string ARAC_MARKA { get; set; }
