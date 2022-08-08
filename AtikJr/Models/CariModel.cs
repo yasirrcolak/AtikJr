@@ -17,7 +17,10 @@
         /// </summary>
         public string Date { get; set; }
 
+        /// <summary>
+        /// sdfghjklşiş
+        /// </summary>
+        public string Aciklama { get; set; }
 
-        // vs vs özellikler
     }
 }
