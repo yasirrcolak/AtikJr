@@ -5,6 +5,10 @@
     /// </summary>
     public class SQLqueries
     {
+        /// <summary>
+        /// Connection string
+        /// </summary>
+        public static string ConnectionString = "Data Source=.\\sqlexpress;Initial Catalog=Atikerjr;Integrated Security=True";
 
         #region Select Sorgulari 
 
@@ -21,7 +25,7 @@
         /// <summary>
         /// stok tablosundan tüm veriler çekildi.
         /// </summary>
-        public static string tumStoklar = " select * from TBL_STOK ";
+        public static string tumStoklar = "SELECT * FROM TBL_STOK";
 
         /// <summary>
         /// muhasebe tablosundan tüm veriler çekildi.

@@ -8,6 +8,7 @@ namespace AtikJr.Controllers
     {
         public IActionResult Index()
         {
+            StokGetir();
             return View();
         }
 
@@ -23,12 +24,12 @@ namespace AtikJr.Controllers
         {
             try
             {
-                String connectionString = "connection string......";
+                String connectionString = Models.SQLqueries.ConnectionString;
 
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
-                    String sqlQuery = "Select asdasdasds.......";
+                    String sqlQuery = Models.SQLqueries.tumStoklar;
 
                     using (SqlCommand command = new SqlCommand(sqlQuery, connection))
                     {
