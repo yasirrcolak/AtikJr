@@ -1,4 +1,5 @@
-﻿using AtikJr.Models;
+﻿using System.Data.SqlClient;
+using AtikJr.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AtikJr.Controllers
@@ -20,7 +21,41 @@ namespace AtikJr.Controllers
         /// </summary>
         public void StokGetir()
         {
+            try
+            {
+                String connectionString = "connection string......";
 
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+                    String sqlQuery = "Select asdasdasds.......";
+
+                    using (SqlCommand command = new SqlCommand(sqlQuery, connection))
+                    {
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                StokModel stok = new StokModel();
+
+                                stok.STOK_ID = reader.GetInt32(0);
+                                stok.STOK_KATEGORİ = reader.GetString(1);
+                                stok.STOK_MARKA_ = reader.GetString(2);
+                                stok.STOK_URUN_ADI = reader.GetString(3);
+                                stok.STOK_TARIH = reader.GetDateTime(4);
+                                stok.STOK_MİKTAR = reader.GetInt32(5);
+
+                                stokListesi.Add(stok);
+                            }
+                        }
+                    }
+
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Hata!!! : " + ex.Message.ToString());
+            }
         }
 
         /// <summary>

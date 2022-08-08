@@ -3,24 +3,33 @@
     public class CariModel
     {
         /// <summary>
-        /// id si
+        /// id sıra
         /// </summary>
-        public int Id { get; set; }
+        public int CARI_ID { get; set; }
 
         /// <summary>
-        /// ismi
+        /// cari tarih bilgileri
         /// </summary>
-        public string Name { get; set; }
+        public DateTime CARI_TARIH { get; set; }
 
         /// <summary>
-        /// Oluşturulma tarihi.
+        /// cari borç tutarı
         /// </summary>
-        public string Date { get; set; }
+        public int CARI_BORC { get; set; }
 
         /// <summary>
-        /// sdfghjklşiş
+        /// cari kodu
         /// </summary>
-        public string Aciklama { get; set; }
+        public int CARI_KOD { get; set; }
 
+        /// <summary>
+        /// cari adresi bilgileri
+        /// </summary>
+        public string CARI_ADRES { get; set; }
+
+        /// <summary>
+        /// cari telefon numarası
+        /// </summary>
+        public string CARI_TELEFON { get; set; }
     }
 }

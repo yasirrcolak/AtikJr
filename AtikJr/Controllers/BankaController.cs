@@ -1,4 +1,5 @@
-﻿using AtikJr.Models;
+﻿using System.Data.SqlClient;
+using AtikJr.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AtikJr.Controllers
@@ -7,6 +8,7 @@ namespace AtikJr.Controllers
     {
         public IActionResult Index()
         {
+            BankaGetir();
             return View();
         }
 
@@ -20,7 +22,41 @@ namespace AtikJr.Controllers
         /// </summary>
         public void BankaGetir()
         {
+            try
+            {
+                String connectionString = "connection string......";
 
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+                    String sqlQuery = "Select asdasdasds.......";
+
+                    using (SqlCommand command = new SqlCommand(sqlQuery, connection))
+                    {
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                BankaModel banka = new BankaModel();
+
+                                banka.BANKA_ID = reader.GetInt32(0);
+                                banka.BANKA_IBAN_NO = reader.GetString(1);
+                                banka.BANKA_HESAP_ISIM = reader.GetString(2);
+                                banka.BANKA_IL = reader.GetString(3);
+                                banka.BANKA_TELEFON = reader.GetString(4);
+                                banka.BANKA_YEKILI_ADI = reader.GetInt32(5);
+
+                                bankaListesi.Add(banka);
+                            }
+                        }
+                    }
+
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Hata!!! : " + ex.Message.ToString());
+            }
         }
 
         /// <summary>
