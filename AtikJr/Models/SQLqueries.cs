@@ -5,6 +5,9 @@
     /// </summary>
     public class SQLqueries
     {
+
+        #region Select Sorgulari 
+
         /// <summary>
         /// cari tablosundan tüm veriler çekildi.
         /// </summary>
@@ -44,6 +47,8 @@
         /// besi tablosundan tüm veriler çekildi.
         /// </summary>
         public static string tumBesiler = " select * from TBL_BESI ";
+
+        #endregion 
 
     }
 }
