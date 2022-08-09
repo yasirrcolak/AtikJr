@@ -8,7 +8,14 @@ namespace AtikJr.Controllers
     {
         public IActionResult Index()
         {
+          
             StokGetir();
+            return View();
+        }
+        public IActionResult Ekleme(StokModel stok)
+        {
+            stokListesi.Add(stok);
+       
             return View();
         }
 
@@ -24,6 +31,7 @@ namespace AtikJr.Controllers
         {
             try
             {
+                
                 String connectionString = Models.SQLqueries.ConnectionString;
 
                 using (SqlConnection connection = new SqlConnection(connectionString))
@@ -48,6 +56,7 @@ namespace AtikJr.Controllers
                                 stok.STOK_MİKTAR = reader.GetInt32(5);
                                 */
                                 stokListesi.Add(stok);
+                                
                             }
                         }
                     }
