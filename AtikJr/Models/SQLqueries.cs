@@ -15,12 +15,12 @@
         /// <summary>
         /// cari tablosundan tüm veriler çekildi.
         /// </summary>
-        public static string tumCariler = "SELECT * from TBL_CARI";
+        public static string tumCariler = "SELECT * from TBLCARISB";
 
         /// <summary>
         /// kasa tablosundan tüm veriler çekildi.
         /// </summary>
-        public static string tumKasalar = "SELECT * FROM TBL_KASA";
+        public static string tumKasalar = "SELECT * FROM TBLKASASB";
 
         /// <summary>
         /// stok tablosundan tüm veriler çekildi.
@@ -30,12 +30,12 @@
         /// <summary>
         /// muhasebe tablosundan tüm veriler çekildi.
         /// </summary>
-        public static string tumMuhasebeler = "SELECT * FROM TBL_MUHASEBE";
+        public static string tumMuhasebeler = "SELECT * FROM TBLMUHSB";
 
         /// <summary>
         /// banka tablosundan tüm veriler çekildi.
         /// </summary>
-        public static string tumBankalar = "SELECT * FROM TBL_BANKA";
+        public static string tumBankalar = "SELECT * FROM TBLBANKASB";
 
         /// <summary>
         /// proje tablosundan tüm veriler çekildi.
@@ -50,7 +50,7 @@
         /// <summary>
         /// besi tablosundan tüm veriler çekildi.
         /// </summary>
-        public static string tumBesiler = "SELECT * FROM TBL_BESI ";
+        public static string tumBesiler = "SELECT * FROM TBLBESISB";
 
         #endregion
 
