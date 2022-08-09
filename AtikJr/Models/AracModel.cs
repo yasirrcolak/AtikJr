@@ -3,14 +3,14 @@
     public class AracModel
     {
         /// <summary>
-        /// araç sırası
+        /// araç kullanım tarihi
         /// </summary>
-        public int ARAC_ID { get; set; }
+        public int REC_DATE { get; set; }
 
         /// <summary>
-        /// araç modeli
+        /// araç kullanıcı adı soyadı
         /// </summary>
-        public string ARAC_MODEL {get; set; }
+        public string REC_UPUSERNAME {get; set; }
 
         /// <summary>
         /// araç plakası
@@ -18,18 +18,15 @@
         public string ARAC_PLAKA { get; set; }
 
         /// <summary>
+        /// araç modeli
+        /// </summary>
+        public string ARAC_MODEL{ get; set; }
+
+        /// <summary>
         /// araç markası
         /// </summary>
         public string ARAC_MARKA { get; set; }
 
-        /// <summary>
-        /// araç vites tipi
-        /// </summary>
-        public string ARAC_VITES_TIPI { get; set; }
-
-        /// <summary>
-        /// aaraç sahibi
-        /// </summary>
-        public string ARAC_SAHIBI { get; set; }
+        
     }
 }
