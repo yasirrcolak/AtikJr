@@ -44,7 +44,7 @@ namespace AtikJr.Controllers
                                 AracModel arac = new AracModel();
 
                                 arac.REC_DATE = reader.GetDateTime(1);
-                                arac.REC_UPUSERNAME = reader.GetString(2);
+                                arac.REC_UPUSERNAME = reader.GetString(5);
                                 arac.ARAC_PLAKA = reader.GetString(10);
                                 arac.ARAC_MODEL = reader.GetString(12);
                                 arac.ARAC_MARKA = reader.GetString(14);
