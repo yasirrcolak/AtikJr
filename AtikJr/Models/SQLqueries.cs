@@ -45,7 +45,7 @@
         /// <summary>
         /// araç tablosundan tüm veriler çekildi.
         /// </summary>
-        public static string tumAraclar = "SELECT * FROM TBL_ARACC";
+        public static string tumAraclar = "SELECT * FROM TBLARACSB";
 
         /// <summary>
         /// besi tablosundan tüm veriler çekildi.
