@@ -63,9 +63,9 @@ namespace AtikJr.Controllers
         /// <summary>
         /// Veritabanında stok tablosuna bir kayıt ekler.
         /// </summary>
-        public void StokKaydet()
+        public void StokKaydet(int id, string stokadi)
         {
-
+            string sorgu = "INSERT INTO `kullanici`(`kullanici_id`, `kullanici_adi`, `sifre`, `tip`) VALUES ('" + id.ToString() + "','[value-2]','[value-3]','[value-4]')";
         }
 
 
@@ -73,7 +73,7 @@ namespace AtikJr.Controllers
         /// <summary>
         /// Veritabanında stok tablosundan bir kayıt siler.
         /// </summary>
-        public void StokSil()
+        public void StokSil(int id)
         {
 
         }

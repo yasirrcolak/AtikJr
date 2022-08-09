@@ -43,13 +43,12 @@ namespace AtikJr.Controllers
                             {
                                 AracModel arac = new AracModel();
 
-                                arac.REC_DATE = reader.GetDateTime(0);
-                                arac.REC_UPUSERNAME = reader.GetString(1);
-                                arac.ARAC_PLAKA = reader.GetString(2);
-                                arac.ARAC_MODEL = reader.GetString(3);
-                                arac.ARAC_MARKA = reader.GetString(4);
+                                arac.REC_DATE = reader.GetDateTime(1);
+                                arac.REC_UPUSERNAME = reader.GetString(2);
+                                arac.ARAC_PLAKA = reader.GetString(10);
+                                arac.ARAC_MODEL = reader.GetString(12);
+                                arac.ARAC_MARKA = reader.GetString(14);
                               
-
                                 aracListesi.Add(arac);
                             }
                         }

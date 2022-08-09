@@ -64,7 +64,7 @@ namespace AtikJr.Controllers
         /// </summary>
         public void CariKaydet()
         {
-
+           
         }
 
         /// <summary>
