@@ -5,7 +5,7 @@
         /// <summary>
         /// araç kullanım tarihi
         /// </summary>
-        public int REC_DATE { get; set; }
+        public DateTime REC_DATE { get; set; }
 
         /// <summary>
         /// araç kullanıcı adı soyadı

@@ -28,12 +28,12 @@ namespace AtikJr.Controllers
         {
             try
             {
-                String connectionString = "connection string......";
+                String connectionString = Models.SQLqueries.ConnectionString;
 
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
-                    String sqlQuery = "Select asdasdasds.......";
+                    String sqlQuery = Models.SQLqueries.tumAraclar;
 
                     using (SqlCommand command = new SqlCommand(sqlQuery, connection))
                     {
@@ -43,12 +43,12 @@ namespace AtikJr.Controllers
                             {
                                 AracModel arac = new AracModel();
 
-                                arac.ARAC_ID = reader.GetInt32(0);
-                                arac.ARAC_MODEL = reader.GetString(1);
+                                arac.REC_DATE = reader.GetDateTime(0);
+                                arac.REC_UPUSERNAME = reader.GetString(1);
                                 arac.ARAC_PLAKA = reader.GetString(2);
-                                arac.ARAC_MARKA = reader.GetString(3);
-                                arac.ARAC_VITES_TIPI = reader.GetString(4);
-                                arac.ARAC_SAHIBI = reader.GetString(5);
+                                arac.ARAC_MODEL = reader.GetString(3);
+                                arac.ARAC_MARKA = reader.GetString(4);
+                              
 
                                 aracListesi.Add(arac);
                             }
