@@ -8,7 +8,7 @@
         /// <summary>
         /// Connection string
         /// </summary>
-        public static string ConnectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=ATIKER;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        public static string ConnectionString = @"Data Source=DESKTOP-0JBLED4;Initial Catalog=ATIKER;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
         #region Select Sorgulari 
 

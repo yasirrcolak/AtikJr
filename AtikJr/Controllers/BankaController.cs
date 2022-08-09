@@ -22,14 +22,16 @@ namespace AtikJr.Controllers
         /// </summary>
         public void BankaGetir()
         {
+            bankaListesi.Clear();
+
             try
             {
-                String connectionString = "connection string......";
+                String connectionString = Models.SQLqueries.ConnectionString;
 
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
-                    String sqlQuery = "Select asdasdasds.......";
+                    String sqlQuery = Models.SQLqueries.tumBankalar;
 
                     using (SqlCommand command = new SqlCommand(sqlQuery, connection))
                     {
@@ -39,12 +41,12 @@ namespace AtikJr.Controllers
                             {
                                 BankaModel banka = new BankaModel();
 
-                                banka.BANKA_ID = reader.GetInt32(0);
-                                banka.BANKA_IBAN_NO = reader.GetString(1);
-                                banka.BANKA_HESAP_ISIM = reader.GetString(2);
-                                banka.BANKA_IL = reader.GetString(3);
-                                banka.BANKA_TELEFON = reader.GetString(4);
-                                banka.BANKA_YEKILI_ADI = reader.GetInt32(5);
+                                banka.REC_NO = reader.GetInt32(0);
+                                banka.REC_DATE = reader.GetDateTime(1);
+                                banka.REC_UPUSERNAME = reader.GetString(5);
+                                banka.BANKA_HESAP_KODU = reader.GetString(10);
+                                banka.IBAN_NO = reader.GetString(12);
+                                banka.BANKA_TELEFON = reader.GetString(29);
 
                                 bankaListesi.Add(banka);
                             }
@@ -64,6 +66,7 @@ namespace AtikJr.Controllers
         /// </summary>
         public void BankaKaydet()
         {
+
 
         }
 

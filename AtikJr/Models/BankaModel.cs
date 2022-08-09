@@ -3,34 +3,34 @@
     public class BankaModel
     {
         /// <summary>
-        /// banka sıra numarası
+        /// banka kayıt numarası
         /// </summary>
-        public int BANKA_ID { get; set; }
+        public int REC_NO { get; set; }
 
         /// <summary>
-        /// banka iban numarası
+        /// banka kayıt tarihi
         /// </summary>
-        public string BANKA_IBAN_NO { get; set; }
+        public DateTime REC_DATE { get; set; }
 
         /// <summary>
-        /// banka hesap ismi
+        /// banka kaydeden kullanıcı ismi
         /// </summary>
-        public string BANKA_HESAP_ISIM { get; set; }
+        public string REC_UPUSERNAME { get; set; }
 
         /// <summary>
-        /// 
+        /// Banka hesap kodu
         /// </summary>
-        public string BANKA_IL { get; set; }
+        public string BANKA_HESAP_KODU { get; set; }
 
         /// <summary>
-        /// telefon numarası
+        /// banka iban no
         /// </summary>
-        public string BANKA_TELEFON { get; set; }
+        public string IBAN_NO { get; set; }
 
         /// <summary>
         /// yetkili ismi
         /// </summary>
-        public int BANKA_YEKILI_ADI { get; set; }
+        public string BANKA_TELEFON { get; set; }
 
 
 

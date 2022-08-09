@@ -8,6 +8,14 @@ html {
     }
 }
 
+@media only screen and (max-width: 1024px) and (max-height: 768px) {
+
+    html{
+        background-color : red;
+    }
+
+}
+
 html {
     position: relative;
     min-height: 100%;
@@ -65,6 +73,92 @@ body {
 
 /*********************************************************************************************/
 
+.tablo2 {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 75%;
+    border: 1px solid #ddd;
+    margin-left: 580px;
+    margin-top: 20px;
+    border: 1px solid black;
+}
 
+
+.tablo1veri11 {
+    width: 75%;
+    height: 20px;
+}
+
+
+.tablo1veri22 {
+    height: 200px;
+    display: block;
+    width: 42%;
+    overflow: auto;
+}
+
+
+
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+
+
+.tablo1 {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 75%;
+    border: 1px solid #ddd;
+    margin-left: 580px;
+    margin-top: -565px;
+}
+
+
+
+.tablo1veri {
+    width: 75%;
+    height: 20px;
+}
+
+
+
+.tablo1veri2 {
+    height: 500px;
+    display: block;
+    width: 45%;
+    overflow: auto;
+}
+
+
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+
+
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+
+
+/*Text box'lar arasý boþluk*/
+.bosluk {
+    margin: 25px;
+}
+
+/*Text Box'larýn konumu*/
+.metin {
+    margin-left: 100px;
+    margin-top: 120px;
+}
+
+/*Butonun konumu*/
+.buton {
+    display: block;
+    margin-left: 260px;
+    margin-top: -50px;
+}
 
 
