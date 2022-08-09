@@ -8,7 +8,7 @@
         /// <summary>
         /// Connection string
         /// </summary>
-        public static string ConnectionString = "Data Source=.\\sqlexpress;Initial Catalog=Atikerjr;Integrated Security=True";
+        public static string ConnectionString = "Data Source=DESKTOP-0JBLED4;Initial Catalog=ATIKER;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
         #region Select Sorgulari 
 
@@ -25,7 +25,7 @@
         /// <summary>
         /// stok tablosundan tüm veriler çekildi.
         /// </summary>
-        public static string tumStoklar = "SELECT * FROM TBL_STOK";
+        public static string tumStoklar = "SELECT * FROM TBLSTOKSB";
 
         /// <summary>
         /// muhasebe tablosundan tüm veriler çekildi.

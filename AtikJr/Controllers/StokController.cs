@@ -40,12 +40,13 @@ namespace AtikJr.Controllers
                                 StokModel stok = new StokModel();
 
                                 stok.STOK_ID = reader.GetInt32(0);
+                                /*
                                 stok.STOK_KATEGORİ = reader.GetString(1);
                                 stok.STOK_MARKA_ = reader.GetString(2);
                                 stok.STOK_URUN_ADI = reader.GetString(3);
                                 stok.STOK_TARIH = reader.GetDateTime(4);
                                 stok.STOK_MİKTAR = reader.GetInt32(5);
-
+                                */
                                 stokListesi.Add(stok);
                             }
                         }
