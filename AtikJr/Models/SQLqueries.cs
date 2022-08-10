@@ -52,15 +52,9 @@
         /// </summary>
         public static string tumBesiler = "SELECT * FROM TBLBESISB";
 
+
         #endregion
-
-        #region Delete Sorguları
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public static string CariSil = "DELETE tablo adı where ID=";
-
+        #region insert sorgulari
         #endregion
 
     }
