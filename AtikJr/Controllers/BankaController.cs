@@ -17,6 +17,8 @@ namespace AtikJr.Controllers
         /// </summary>
         public static List<BankaModel> bankaListesi = new List<BankaModel>();
 
+        public static BankaModel kaydedilecekBanka = new BankaModel();
+
         /// <summary>
         /// Veritabanından tüm banka kayıtlarını getirir.
         /// </summary>
@@ -61,9 +63,8 @@ namespace AtikJr.Controllers
             }
         }
 
-        /// <summary>
-        /// Veritabanında banka tablosuna bir kayıt ekler.
-        /// </summary>
+
+        [HttpPost] 
         public void BankaKaydet()
         {
 

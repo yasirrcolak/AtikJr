@@ -7,14 +7,42 @@ html {
         font-size: 16px;
     }
 }
-
 @media only screen and (max-width: 1024px) and (max-height: 768px) {
 
-    html{
-        background-color : red;
+    .tablo1, .tablo1veri, .tablo1veri2 {
+      
+        position: absolute;
+        right: 110px;
+        bottom: -550px;
+        
+    }
+    .tablo2, .tablo1veri11, .tablo1veri22 {
+    
+       
+        position: absolute;
+        right: 120px;
+        bottom: -200px;
+        
+    }
+}
+@media only screen and (max-width: 412px) and (max-height: 915px) {
+
+    .tablo1, .tablo1veri, .tablo1veri2 {
+        position: absolute;
+        right: 250px;
+        bottom: -550px;
+        
     }
 
+    .tablo2, .tablo1veri11, .tablo1veri22 {
+        position: absolute;
+        right: 150px;
+        bottom: -200px;
+        
+    }
 }
+
+
 
 html {
     position: relative;

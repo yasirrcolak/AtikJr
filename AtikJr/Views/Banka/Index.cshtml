@@ -20,34 +20,36 @@
 
 <body>
 
-	<form action="../Controllers/BankaController/BankaKayıt">
+
+
+	<form method="POST">
 
 		<table class="metin" border="1">
 
 			<tr>
 				<td>&nbsp &nbsp &nbsp Kayıt Tarihi:</td>
-				<td><input type="text" class="bosluk" name="no" id="no" required placeholder="Lütfen Kayıt Tarihi Giriniz"></td>
+				<td><input type="text" class="form-control" name="KayitTarihi" id="KayitTarihi" required placeholder="Lütfen Kayıt Tarihi Giriniz" value="@AtikJr.Controllers.BankaController.kaydedilecekBanka.REC_DATE"></td>
 			</tr>
 
 			<tr>
 				<td>&nbsp &nbsp &nbsp Kaydeden Kullanıcı:</td>
 
-				<td><input type="text" class="bosluk" name="ad" id="ad" required placeholder="Lütfen Kaydeden Kullanıcının Adını Giriniz"></td>
+				<td><input type="text" class="form-control" name="KaydedenKullanici" id="KaydedenKullanici" required placeholder="Lütfen Kaydeden Kullanıcının Adını Giriniz" value="@AtikJr.Controllers.BankaController.kaydedilecekBanka.REC_UPUSERNAME"></td>
 			</tr>
 
 			<tr>
 				<td>&nbsp &nbsp &nbsp IBAN No:</td>
-				<td><input type="text" class="bosluk" name="no" id="no" required placeholder="Lütfen IBAN No Giriniz"></td>
+				<td><input type="text" class="form-control" name="IbanNo" id="IbanNo" required placeholder="Lütfen IBAN No Giriniz" value="@AtikJr.Controllers.BankaController.kaydedilecekBanka.IBAN_NO"></td>
 			</tr>
 
 			<tr>
 				<td>&nbsp &nbsp &nbsp Banka Hesap Kodu:</td>
-				<td><input type="text" class="bosluk" name="no" id="no" required placeholder="Lütfen Banka Hesap Kodunu Giriniz"></td>
+				<td><input type="text" class="form-control" name="HesapKodu" id="HesapKodu" required placeholder="Lütfen Banka Hesap Kodunu Giriniz" value="@AtikJr.Controllers.BankaController.kaydedilecekBanka.BANKA_HESAP_KODU"></td>
 			</tr>
 
 			<tr>
 				<td>&nbsp &nbsp &nbsp Banka Telefon:</td>
-				<td><input type="text" class="bosluk" name="no" id="no" required placeholder="Lütfen Banka Telefon No Giriniz"></td>
+				<td><input type="text" class="form-control" name="BankaTelefon" id="BankaTelefon" required placeholder="Lütfen Banka Telefon No Giriniz" value="@AtikJr.Controllers.BankaController.kaydedilecekBanka.BANKA_TELEFON"></td>
 			</tr>
 
 			<tr>
@@ -60,7 +62,7 @@
 	</form>
 
 
-	<table class="table tablo1 tablo1veri tablo1veri2 ">
+	<table class=" metin ">
 		<thead>
 			<tr>
 				<th>Kayıt No</th>
@@ -69,7 +71,7 @@
 				<th>IBAN No</th>
 				<th>Banka Hesap Kodu</th>
 				<th>Banka Telefon</th>
-				<th>Sil</th>
+
 			</tr>
 		</thead>
 		<tbody>
@@ -82,7 +84,7 @@
 					<td>@item.IBAN_NO</td>
 					<td>@item.BANKA_HESAP_KODU</td>
 					<td>@item.BANKA_TELEFON</td>
-					<td><a class="btn btn-primary btn-sm" href="">Delete</a></td>
+
 				</tr>
 			}
 		</tbody>
